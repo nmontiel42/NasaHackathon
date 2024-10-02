@@ -4,32 +4,25 @@ export default function LoggedOut() {
   const { login, register } = useKindeAuth();
   return (
     <>
-      <header>
-        <nav className="nav container">
-          <h1 className="text-display-3">BioInvaders</h1>
-          <div>
-            <button className="btn btn-ghost sign-in-btn" onClick={login}>
-              Sign in
-            </button>
-            <button className="btn btn-dark" onClick={register}>
-              Sign up
-            </button>
-          </div>
-        </nav>
-      </header>
-
-      <main>
-        <p>Pagina inicial</p>
-      </main>
-
-      <footer className="footer">
-        <div className="container">
-          <strong className="text-heading-2">BioInvaders</strong><br/>
-          <small className="text-subtle">
-            © 2024 BioInvaders, Inc. All rights reserved
-          </small>
-        </div>
-      </footer>
+    <body className="bg-customColor1">
+        <header>
+          <nav className="bg-black bg-opacity-50 flex justify-between items-center p-4">
+            <h1 className="font-bold text-2xl">BioInvaders</h1>
+            <div className="flex gap-2">
+              <button className="rounded-md p-1" onClick={login}>
+                Sign in
+              </button>
+              <button className="bg-customColor5 text-white rounded-2xl p-2" onClick={register}>
+                Sign up
+              </button>
+            </div>
+          </nav>
+        </header>
+        <br />
+        <main>
+          <h1 className="flex justify-center">Welcome to our page!</h1>
+        </main>
+      </body>
     </>
   );
 }
